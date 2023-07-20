@@ -1,5 +1,6 @@
-def print_numbers():
-    for num in range(99):
-        print("f{i} = {hex(i)}".format(num, num))
+def generate_hexadecimal_mapping():
+    for i in range(99):
+        hex_value = format(i, 'x')
+        print(f"{i} = 0x{hex_value}")
 
-print_numbers()
+generate_hexadecimal_mapping()
